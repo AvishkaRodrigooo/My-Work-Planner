@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/bbb"
+    tools:context=".updateactivity">
+
+    <TextView
+
+        android:id="@+id/editNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="Edit Plan."
+        android:textColor="@color/blue"
+        android:textSize="24dp" />
+
+    <ImageView
+
+        android:id="@+id/updateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_task_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editNoteHeading"
+        android:layout_marginEnd="6dp"
+        />
+
+    <EditText
+
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the Date"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/editNoteHeading"
+        android:background="@drawable/my_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins_light"/>
+
+    <EditText
+
+        android:id="@+id/UpdateContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/updateTitleEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/my_border"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="top"
+        android:hint="Enter Your Work plan"
+        android:padding="12dp"
+        android:textSize="20dp" />
+
+
+
+
+</RelativeLayout>
